@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* VARIABLES */
+:root {
+    /* FONTS */
+    --Inter-font: "Inter", sans-serif;
+    /* COLORS */
+    --black: #000;
+    --white: #fff;
+  }
+  /* STYLE RESET */
+  * {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+  }
+  .section{
+    background-color: #F3F4F6;
+  }
+  /* INITIAL STYLE */
+  body {
+    font-size: 10px;
+    color: var(--black);
+    background-color: var(--white);
+  }
+  .colored-title {
+    color: #f85c70;
+  }
+  
+
+  h1 {
+    font-size: 4rem;
+    font-weight: 700;
+  }
+  
+  h2 {
+    font-size: 4rem;
+    font-weight: 700;
+  }
+  
+  h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  
+  h4 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  h6 {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  p {
+    font-size: 1rem;
+    font-weight: 400;
+  }

@@ -18,6 +18,15 @@ const routes = {
 
   agentLayout: "/agent",
   agentDashboard: "/agent/dashboard",
+
+  adminLayout: "/admin",
+  AdminDashboard: "/admin/adminDashboard",
+  adminEmployees: "/admin/employees",
+  EmployeeProfile: "/admin/employeeprofile",
+  qualifications: "/admin/qualifications",
+  providers: "/admin/providers",
+  applications: "/admin/applications",
+  emailtemplates: "/admin/emailtemplates",
 };
 
 export default routes;

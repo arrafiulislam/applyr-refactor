@@ -174,132 +174,7 @@ const Navbar = () => {
                     className={`absolute right-4 top-full w-full max-w-[300px] rounded-lg bg-white px-6 py-5 shadow lg:static lg:block lg:w-full lg:max-w-full lg:shadow-none  ${
                       !open && "hidden"
                     }`}
-                  >
-                    <ul className="block lg:flex">
-                      <li className="relative">
-                        <button
-                          onClick={() => setShowMegaMenu(!showMegaMenu)}
-                          className="flex w-full items-center justify-between gap-2 py-2 text-base font-medium text-body-color hover:text-blue-600 lg:ml-12 lg:inline-flex lg:w-auto lg:justify-center "
-                        >
-                          Services
-                          <span
-                            className={`${
-                              showMegaMenu ? "-scale-y-100" : ""
-                            } duration-200`}
-                          >
-                            <svg
-                              width="20"
-                              height="20"
-                              viewBox="0 0 20 20"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M10 14.25C9.8125 14.25 9.65625 14.1875 9.5 14.0625L2.3125 7C2.03125 6.71875 2.03125 6.28125 2.3125 6C2.59375 5.71875 3.03125 5.71875 3.3125 6L10 12.5312L16.6875 5.9375C16.9688 5.65625 17.4062 5.65625 17.6875 5.9375C17.9688 6.21875 17.9688 6.65625 17.6875 6.9375L10.5 14C10.3437 14.1562 10.1875 14.25 10 14.25Z"
-                                fill="currentColor"
-                              />
-                            </svg>
-                          </span>
-                        </button>
-                        <div
-                          className={`absolute z-50 w-full lg:absolute lg:left-0 lg:top-full lg:w-[850px] lg:rounded-xl lg:shadow-lg ${
-                            showMegaMenu ? "block" : "hidden"
-                          }`}
-                        >
-                          <div className="rounded-t-xl bg-white p-2 lg:p-8  ">
-                            <div className="mb-8">
-                              <h4 className="mb-1 text-base font-medium text-dark ">
-                                Services
-                              </h4>
-                              <p className="text-sm text-body-color ">
-                                Get started and learn more about our services.
-                              </p>
-                            </div>
-
-                            <div className="grid gap-y-2 lg:grid-cols-2 lg:gap-x-5">
-                              <a
-                                href="#"
-                                className="group flex flex-col gap-4 rounded-lg p-4 duration-200 hover:bg-gray-100 lg:flex-row "
-                              >
-                                <div className="text-blue-600">
-                                  <FontAwesomeIcon
-                                    icon={faUserGraduate}
-                                    size="2xl"
-                                  />
-                                </div>
-                                <div>
-                                  <h3 className="mb-1 text-base font-semibold text-dark duration-200 hover:bg-gray-50  group-hover:text-blue-600 ">
-                                    Student
-                                  </h3>
-                                  <p className="text-sm text-body-color ">
-                                    Lorem Ipsum is simply dummy text of the
-                                    printing and typesetting industry.
-                                  </p>
-                                </div>
-                              </a>
-                              <a
-                                href="#"
-                                className="group hover:bg-gray-100  flex flex-col gap-4 rounded-lg p-4 duration-200 hover:bg-gray-1 lg:flex-row "
-                              >
-                                <div className="text-blue-600">
-                                  <FontAwesomeIcon
-                                    icon={faBuildingColumns}
-                                    size="2xl"
-                                  />
-                                </div>
-                                <div>
-                                  <h3 className="mb-1 text-base font-semibold text-dark duration-200 group-hover:text-blue-600 ">
-                                    Agency
-                                  </h3>
-                                  <p className="text-sm text-body-color ">
-                                    Lorem Ipsum is simply dummy text of the
-                                    printing and typesetting industry.
-                                  </p>
-                                </div>
-                              </a>
-                              <a
-                                href="#"
-                                className="group hover:bg-gray-100  flex flex-col gap-4 rounded-lg p-4 duration-200 hover:bg-gray-1 lg:flex-row "
-                              >
-                                <div className="text-blue-600">
-                                  <FontAwesomeIcon icon={faSchool} size="2xl" />
-                                </div>
-                                <div>
-                                  <h3 className="mb-1 text-base font-semibold text-dark duration-200 group-hover:text-blue-600 ">
-                                    Education Provider
-                                  </h3>
-                                  <p className="text-sm text-body-color ">
-                                    Lorem Ipsum is simply dummy text of the
-                                    printing and typesetting industry.
-                                  </p>
-                                </div>
-                              </a>
-                              <a
-                                href="#"
-                                className="group flex flex-col gap-4 rounded-lg p-4 duration-200 hover:bg-gray-1 lg:flex-row"
-                              ></a>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          className="flex py-2 text-base font-medium text-body-color hover:text-blue-600 lg:ml-12 lg:inline-flex  "
-                        >
-                          Home
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          className="flex py-2 text-base font-medium text-body-color hover:text-blue-600 lg:ml-12 lg:inline-flex "
-                        >
-                          Contact Us
-                        </a>
-                      </li>
-                    </ul>
-                  </nav>
+                  ></nav>
                 )}
               </div>
               <div className="hidden justify-end gap-3 pr-16 sm:flex lg:pr-0">
@@ -307,15 +182,9 @@ const Navbar = () => {
                   <>
                     <Link
                       to="/signin"
-                      className="rounded-lg bg-gray-100 px-5 py-2.5 text-base font-medium  hover:text-primary "
+                      className="rounded-lg bg-blue-600 px-5 py-2.5 text-base font-medium text-white hover:bg-primary "
                     >
                       Login
-                    </Link>
-                    <Link
-                      to={routes.signupSelection}
-                      className="rounded-lg bg-blue-600 px-5 py-2.5 text-base font-medium text-white hover:bg-primary"
-                    >
-                      Sign Up
                     </Link>
                   </>
                 ) : (

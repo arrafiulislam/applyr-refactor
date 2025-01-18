@@ -22,6 +22,14 @@ import AgentDashboard from "./pages/Agent/AgentDashboard.jsx";
 import routes from "./routes";
 import ResumeRegister from "./pages/Student/ResumeRegister.jsx";
 import EducationCertReg from "./pages/Student/EducationCertReg.jsx";
+import AdminLayout from "./layout/AdminLayout.jsx";
+import AdminDashboard from "./pages/admin/dashboard/AdminDashboard.jsx";
+import Employees from "./pages/admin/employees/Employees.jsx";
+import EmployeeProfile from "./pages/admin/employeeProfile/EmployeeProfile.jsx";
+import Qualifications from "./pages/admin/qualifications/Qualifications.jsx";
+import AllProvidersScreen from "./pages/admin/provider/AllProviders.jsx";
+import AllStudentsScreen from "./pages/admin/applications/ApplicationsScreen.jsx";
+import EmailTemplates from "./pages/emailtemplates/EmailTemplates.jsx";
 
 const router = createBrowserRouter([
   {
@@ -95,6 +103,41 @@ const router = createBrowserRouter([
       {
         path: routes.agentDashboard,
         element: <AgentDashboard />,
+      },
+    ],
+  },
+  //admin
+  {
+    path: routes.adminLayout,
+    element: <AdminLayout />,
+    children: [
+      {
+        path: routes.adminDashboard,
+        element: <AdminDashboard />,
+      },
+      {
+        path: routes.adminEmployees,
+        element: <Employees />,
+      },
+      {
+        path: routes.EmployeeProfile,
+        element: <EmployeeProfile />,
+      },
+      {
+        path: routes.qualifications,
+        element: <Qualifications />,
+      },
+      {
+        path: routes.providers,
+        element: <AllProvidersScreen />,
+      },
+      {
+        path: routes.applications,
+        element: <AllStudentsScreen />,
+      },
+      {
+        path: routes.emailtemplates,
+        element: <EmailTemplates />,
       },
     ],
   },

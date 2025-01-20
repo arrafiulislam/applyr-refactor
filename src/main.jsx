@@ -30,6 +30,7 @@ import Qualifications from "./pages/admin/qualifications/Qualifications.jsx";
 import AllProvidersScreen from "./pages/admin/provider/AllProviders.jsx";
 import AllStudentsScreen from "./pages/admin/applications/ApplicationsScreen.jsx";
 import EmailTemplates from "./pages/emailtemplates/EmailTemplates.jsx";
+import EmployeeActivity from "./pages/admin/employeeActivity/EmployeeActivity.jsx";
 
 const router = createBrowserRouter([
   {
@@ -138,6 +139,10 @@ const router = createBrowserRouter([
       {
         path: routes.emailtemplates,
         element: <EmailTemplates />,
+      },
+      {
+        path: routes.employeeActivity,
+        element: <EmployeeActivity />,
       },
     ],
   },

@@ -27,6 +27,7 @@ const routes = {
   providers: "/admin/providers",
   applications: "/admin/applications",
   emailtemplates: "/admin/emailtemplates",
+  employeeActivity: "/admin/employeeactivity",
 };
 
 export default routes;
